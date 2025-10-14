@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/icon.jpg" type="image/x-icon">
+    <title>Online Payment - Health Services</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <section class="gauto-header-top-area" id="hed1">
+        <div class="container">
+            <div class="row h1r">
+                <div class="col-lg-6">
+                    <div class="h1r-con">
+                        <p>
+                            <a href="tel:6207896329">
+                                <i class="bi bi-telephone-fill"></i>
+                                +91 6207896329
+                            </a>
+                        </p>
+                        <a href="purushotamkumar842@gmail.com">
+                            <i class="bi bi-envelope-at-fill"></i>
+                            purushotamkumar842@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h1r-icon">
+                        <ul>
+                            <li><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid021UNLF4X8QiJ47JuXYCmMZVYMByxnjrWEyunrdtSvP7soMvFYCzAHmwjDpC4PPfTxl&id=100025995091847"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="https://x.com/PURUSHOTAMTIW18?t=Kea_XkkyNJfLrWc8FPPtQg&s=09"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/mr.purushotam_?igsh=eTQ4bXR2cGxva3o1"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/purushotam-kumar-9845892b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="gauto-main-header-area" id="hed2">
+        <div class="container">
+            <div class="row h2r">
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="image/icon.jpg" alt="Logo" class="icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="name">
+                        <h4>Health <span>Services</span></h4>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
+                <div class="col-lg-3">
+                    <div class="header-action">
+                        <a href="contact.html">
+                            <p>Book Online Appointment</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN MENU  -->
+    <nav class="nav-bar">
+        <a href="javascript:void(0);" class="toggle-button" id="toggle" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="booking.html">Ambulance Booking</a></li>
+                <li><a href="pay.html">Online Pay</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="about1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about1-title">
+                        <h3>ONLINE PAYMENT</h3>
+                        <ul>
+                            <li><i class="bi bi-house-fill"></i></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><i class="bi bi-caret-right-square-fill"></i></li>
+                            <li>Online Payment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Options Banner -->
+    <section class="payment-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="payment-info">
+                        <i class="bi bi-credit-card"></i>
+                        <h2>Secure Online Payment</h2>
+                        <p>Multiple payment options available for your convenience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Form Section -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="payment-form-container">
+                        <h2><i class="bi bi-credit-card"></i> Payment Details</h2>
+                        <p>Please fill in your payment information to complete the transaction.</p>
+                        
+                        <form class="payment-form" id="paymentForm">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="patientName">Patient Name *</label>
+                                        <input type="text" id="patientName" name="patientName" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="amount">Amount (₹) *</label>
+                                        <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="paymentMethod">Payment Method *</label>
+                                        <select id="paymentMethod" name="paymentMethod" required>
+                                            <option value="">Select Payment Method</option>
+                                            <option value="credit_card">Credit Card</option>
+                                            <option value="debit_card">Debit Card</option>
+                                            <option value="upi">UPI</option>
+                                            <option value="net_banking">Net Banking</option>
+                                            <option value="wallet">Digital Wallet</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number</label>
+                                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="expiryDate">Expiry Date</label>
+                                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="cardHolderName">Card Holder Name</label>
+                                        <input type="text" id="cardHolderName" name="cardHolderName" placeholder="As printed on card">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Payment Description</label>
+                                <textarea id="description" name="description" placeholder="Brief description of the payment (e.g., Ambulance service, Consultation fee, etc.)"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="submit-btn">
+                                    <i class="bi bi-lock"></i>
+                                    Pay Securely
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="payment-sidebar">
+                        <div class="payment-summary">
+                            <h3><i class="bi bi-receipt"></i> Payment Summary</h3>
+                            <div class="summary-item">
+                                <span>Service Type:</span>
+                                <span id="serviceType">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Amount:</span>
+                                <span id="summaryAmount">₹0.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>GST (18%):</span>
+                                <span id="gstAmount">₹0.00</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Total Amount:</span>
+                                <span id="totalAmount">₹0.00</span>
+                            </div>
+                        </div>
+
+                        <div class="payment-security">
+                            <h4><i class="bi bi-shield-check"></i> Payment Security</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i> SSL Encrypted</li>
+                                <li><i class="bi bi-check-circle"></i> PCI DSS Compliant</li>
+                                <li><i class="bi bi-check-circle"></i> Secure Gateway</li>
+                                <li><i class="bi bi-check-circle"></i> 24/7 Support</li>
+                            </ul>
+                        </div>
+
+                        <div class="accepted-payments">
+                            <h4><i class="bi bi-credit-card"></i> Accepted Payment Methods</h4>
+                            <div class="payment-methods">
+                                <i class="bi bi-credit-card" title="Credit/Debit Cards"></i>
+                                <i class="bi bi-phone" title="UPI"></i>
+                                <i class="bi bi-bank" title="Net Banking"></i>
+                                <i class="bi bi-wallet2" title="Digital Wallets"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Plans -->
+    <section class="payment-plans">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Service Pricing</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h4>Basic Consultation</h4>
+                            <div class="price">₹500</div>
+                        </div>
+                        <ul>
+                            <li><i class="bi bi-check"></i> General Consultation</li>
+                            <li><i class="bi bi-check"></i> Basic Health Check</li>
+                            <li><i class="bi bi-check"></i> Prescription</li>
+                            <li><i class="bi bi-check"></i> Follow-up Call</li>
+                        </ul>
+                        <button class="plan-btn" onclick="selectPlan('Basic Consultation', 500)">Select Plan</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card featured">
+                        <div class="plan-header">
+                            <h4>Ambulance Service</h4>
+                            <div class="price">₹800</div>
+                        </div>
+                        <ul>
+                            <li><i class="bi bi-check"></i> Basic Ambulance</li>
+                            <li><i class="bi bi-check"></i> Medical Equipment</li>
+                            <li><i class="bi bi-check"></i> Trained Staff</li>
+                            <li><i class="bi bi-check"></i> 24/7 Available</li>
+                        </ul>
+                        <button class="plan-btn" onclick="selectPlan('Ambulance Service', 800)">Select Plan</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h4>Advanced Care</h4>
+                            <div class="price">₹1200</div>
+                        </div>
+                        <ul>
+                            <li><i class="bi bi-check"></i> Specialist Consultation</li>
+                            <li><i class="bi bi-check"></i> Advanced Tests</li>
+                            <li><i class="bi bi-check"></i> Priority Booking</li>
+                            <li><i class="bi bi-check"></i> Home Visit</li>
+                        </ul>
+                        <button class="plan-btn" onclick="selectPlan('Advanced Care', 1200)">Select Plan</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h4>Emergency Package</h4>
+                            <div class="price">₹2000</div>
+                        </div>
+                        <ul>
+                            <li><i class="bi bi-check"></i> Emergency Response</li>
+                            <li><i class="bi bi-check"></i> Critical Care</li>
+                            <li><i class="bi bi-check"></i> Hospital Transfer</li>
+                            <li><i class="bi bi-check"></i> 24/7 Support</li>
+                        </ul>
+                        <button class="plan-btn" onclick="selectPlan('Emergency Package', 2000)">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are a dedicated team of medical professionals offering top-notch healthcare services.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="booking.html">Ambulance</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: purushotamkumar842@gmail.com</p>
+                <p>Phone: +91 6207896329</p>
+                <p>Address: near GIFT college</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid021UNLF4X8QiJ47JuXYCmMZVYMByxnjrWEyunrdtSvP7soMvFYCzAHmwjDpC4PPfTxl&id=100025995091847"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/PURUSHOTAMTIW18?t=Kea_XkkyNJfLrWc8FPPtQg&s=09"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/mr.purushotam_?igsh=eTQ4bXR2cGxva3o1"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/purushotam-kumar-9845892b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Medical Website | Designed by 😎Doraemon😎
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const navbarLinks = document.getElementById('navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+
+        // Plan selection function
+        function selectPlan(serviceName, amount) {
+            document.getElementById('serviceType').textContent = serviceName;
+            document.getElementById('summaryAmount').textContent = `₹${amount.toFixed(2)}`;
+            
+            const gst = amount * 0.18;
+            const total = amount + gst;
+            
+            document.getElementById('gstAmount').textContent = `₹${gst.toFixed(2)}`;
+            document.getElementById('totalAmount').textContent = `₹${total.toFixed(2)}`;
+            
+            // Update the amount input field
+            document.getElementById('amount').value = total.toFixed(2);
+            
+            // Scroll to payment form
+            document.querySelector('.payment-form-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Card number formatting
+        document.getElementById('cardNumber').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+            let formattedValue = value.replace(/(\d{4})/g, '$1 ').trim();
+            e.target.value = formattedValue;
+        });
+
+        // Expiry date formatting
+        document.getElementById('expiryDate').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length >= 2) {
+                value = value.slice(0, 2) + '/' + value.slice(2, 4);
+            }
+            e.target.value = value;
+        });
+
+        // CVV formatting
+        document.getElementById('cvv').addEventListener('input', function(e) {
+            e.target.value = e.target.value.replace(/\D/g, '');
+        });
+    </script>
+</body>
+</html>
